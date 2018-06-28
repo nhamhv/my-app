@@ -1,21 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Grid } from 'semantic-ui-react';
 
-import Features from './Features';
+import PlanList from './PlanList';
 
 const Home = () => {
   return (
-    <Container>
-      <Grid stackable columns={1}>
-        <Grid.Row>
-          <Grid.Column>
-            <Features />
-            <Link to="/dynamic">Navigate to Dynamic Page</Link>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Container>
+    <div className="container">
+      <PlanList />
+      <Link to="/dynamic">Navigate to Dynamic Page</Link>
+      <Link to="/about">Navigate to About Page</Link>
+    </div>
   );
 };
 

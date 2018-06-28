@@ -13,13 +13,17 @@
     "build:bundleanalyzer": "yarn build -- --env.addons=bundleanalyzer"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.2",
     "react": "^16.4.0",
     "react-delay-render": "^0.1.2",
     "react-dom": "^16.4.0",
     "react-imported-component": "^1.0.4",
     "react-prop-types": "^0.4.0",
     "react-router-dom": "^4.2.2",
-    "semantic-ui-react": "^0.75.1"
+    "semantic-ui-react": "^0.75.1",
+    "uuid": "^3.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -33,6 +37,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
+    "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "react-hot-loader": "^4.2.0",

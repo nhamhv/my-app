@@ -1,0 +1,10 @@
+@import "style/normalize.css";
+@import "~bulma";
+
+$A: 22px;
+
+body {
+  padding: $A;
+}
+
+//https://codepen.io/anon/pen/ERdKdo

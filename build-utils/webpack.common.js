@@ -6,6 +6,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const resolve =function (pathName) {
+  console.log(path.resolve(pathName));
   return path.resolve(pathName);
 };
 
@@ -15,9 +16,11 @@ const config = {
   },
   resolve: {
     alias: {
-      components$: resolve('src/components/'),
-      src$: resolve('src/'),
-    }
+      components$: resolve('./src/components/'),
+      src$: resolve('./src/'),
+    },
+    modules: ['node_modules', 'src'],
+    extensions: ['.js', '.sass', '.json'],
   },
   output: {
     path: commonPaths.outputPath,
